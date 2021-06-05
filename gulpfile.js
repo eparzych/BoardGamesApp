@@ -9,7 +9,7 @@ const browserSync = require("browser-sync").create();
 
 function compileSass(done) {
   gulp
-    .src(entryPath + "/scss/main.scss")
+    .src(entryPath + "/scss/style.scss")
     .pipe(sourcemaps.init())
     .pipe(sass({outputStyle: "expanded"}).on("error", sass.logError))
     .pipe(autoprefixer())
