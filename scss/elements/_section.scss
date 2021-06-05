@@ -12,6 +12,10 @@
       margin-bottom: 50px;
       color: black;
 
+      &:nth-child(3) {
+        margin-right: 0;
+      }
+
     .section__article__title {
       padding-bottom: 20px;
       font-size: 25px;
