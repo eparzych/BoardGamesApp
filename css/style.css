@@ -564,6 +564,10 @@ header .fa-chevron-down {
   border-radius: 5px;
 }
 
+.btn-search {
+  height: 100%;
+}
+
 .section__login {
   background: url("../images/login-img.jpg") center/cover;
   background-repeat: no-repeat;
@@ -659,6 +663,22 @@ input {
 .board__games__played .played__game article .played__board__game__text {
   text-align: center;
   font-size: 18px;
+}
+
+.bg .bg__title {
+  padding: 20px;
+  font-size: 22px;
+}
+.bg .bg-list a {
+  color: black;
+  font-size: 18px;
+}
+
+.search__form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 35px;
 }
 
 * {

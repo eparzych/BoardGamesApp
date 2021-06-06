@@ -1,0 +1,21 @@
+// .search {
+
+// }
+
+.search__form {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;;
+    height: 35px;
+
+    input {
+        height: 100%;
+        outline: none;
+        border: 1px solid #aaa;
+      }
+    
+    input:focus {
+       border-color: $header-color;
+    }
+}
+

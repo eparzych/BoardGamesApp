@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BoardGameApp</title>
+    <script src="https://kit.fontawesome.com/56880bf12d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav__container container">
+          <a class="nav__logo" href="#"><span class="logo__color1">Board<span class="logo__color2">GamesApp</span></a>
+          <div class="navbar-nav">
+              <a class="nav__elem" href="#">Home</a>
+              <a class="nav__elem" href="#aboutus">o nas</a>
+              <a class="nav__elem" href="#portfolio">planszówki</a>
+              <a class="nav__elem" href="#achievements">osiągnięcia</a>
+              <a class="nav__elem" href="#contact">kontakt</a>
+          </div>
+        </div>
+      </div>
+  </nav>
+  <section class="section__login container">
+    <form action="">
+        <div>
+          <label for="">
+            Nazwa planszówki
+            <input type="text" placeholder="Nazwa planszówki" />
+          </label>
+        </div>
+        <div>
+            <label for="meeting-time">Choose a time for your appointment:</label>
+            <input type="datetime-local" id="meeting-time"
+                   name="meeting-time" value="2018-06-12T19:30"
+                   min="2018-06-07T00:00" max="2018-06-14T00:00">
+        </div>
+        <div>
+          <label for="">
+            Miejsce grania
+            <input type="text" placeholder="Miejsce grania" />
+          </label>
+        </div>
+        <div>
+            <ul>
+                <li><div>Wybór gracza</div>
+                    <label for=""> Imie gracza
+                    <input type="text" placeholder="Imie gracza" />
+                  </label>
+                <p contenteditable="true">Wpisz ilość punktów</p></li>
+            </ul>
+        </div>
+        <div class="last">
+          <button class="btn">Zapisz</button>
+        </div>
+      </form>
+
+</section>
+    
+</body>
+</html>
