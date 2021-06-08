@@ -1,0 +1,69 @@
+header {
+    height: 100vh;
+    overflow: hidden;
+    background-color:  #2f3238;
+
+    .hero-bg {
+        position: relative;
+        top: 0;
+        height: 100%;
+        background: url(../images/chess.jpg) center/cover;
+        background-repeat: no-repeat;
+        transition: opacity 1s, transform 1s;
+    
+        &:hover {
+            opacity: 0.6;
+            transform: scale3d(1.1, 1.1, 1);
+        }
+    }
+}
+
+.hero-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+
+    .hero-text {
+        // position: absolute;
+        // top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 50px;
+        
+        h2 {
+            word-spacing: -0.15em;
+            font-weight: 300;
+        }
+        h2 span {
+            font-weight: 800;
+        }
+            
+        p {
+            letter-spacing: 1px;
+            font-size: 68.5%;
+            margin: 0 0 0.25em;
+            padding: 0.4em 1em;
+            background: rgba(255,255,255,0.9);
+            color: #2f3238;
+            text-transform: none;
+            font-weight: 500;
+            transition: opacity 0.35s, transform 0.35s;
+            opacity: 0;
+
+            &:hover {
+                opacity: 1;
+                transform: translate(0, 100px);
+            }
+        }
+    }
+}
+

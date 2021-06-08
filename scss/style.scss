@@ -5,7 +5,7 @@
 @import "settings/mixins";
 
 @import "elements/nav";
-@import "elements/header";
+@import "elements/welcome";
 @import "elements/section";
 @import "elements/logo";
 @import "elements/buttons";
@@ -33,11 +33,6 @@
   
   a {
   text-decoration: none;
-  }
-  
-  h2 {
-    font-family: var(--font-raleway);
-    font-size: 2.25rem;
   }
 
   .container {
