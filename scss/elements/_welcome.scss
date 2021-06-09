@@ -10,26 +10,18 @@ header {
         background: url(../images/chess.jpg) center/cover;
         background-repeat: no-repeat;
         transition: opacity 1s, transform 1s;
-    
-        &:hover {
-            opacity: 0.6;
-            transform: scale3d(1.1, 1.1, 1);
-        }
     }
 }
 
-.hero-img {
+.hero-text {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     height: 100%;
     width: 100%;
-    cursor: pointer;
 
-    .hero-text {
-        // position: absolute;
-        // top: 0;
+    .hero-title {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -37,33 +29,50 @@ header {
         height: 100%;
         text-align: center;
         text-transform: uppercase;
-        font-size: 50px;
-        
+        font-size: 65px;
+        color: #122547;
+        cursor: pointer;
+
+        &:hover {
+            .hero-bg {
+                opacity: 0.6;
+                transform: scale3d(1.1, 1.1, 1);
+            }
+
+            p {
+                opacity: 1;
+                transform: translate(0, 50px);
+            }
+            h2 {
+                transform: translate(0, -50px);
+            }
+        }
+
         h2 {
-            word-spacing: -0.15em;
-            font-weight: 300;
+            font-weight: 800;
+            transition: transform 0.35s;
         }
         h2 span {
             font-weight: 800;
+            word-spacing: -0.15em;
+        }
+        .logo__color1 {
+            color:#839dcf;
+        }
+        .logo__color2 {
+            color:#1d3c77;
         }
             
         p {
-            letter-spacing: 1px;
-            font-size: 68.5%;
-            margin: 0 0 0.25em;
-            padding: 0.4em 1em;
-            background: rgba(255,255,255,0.9);
-            color: #2f3238;
+            font-size: 48px;
             text-transform: none;
+            letter-spacing: 1px;
+            color: #2f3238;
             font-weight: 500;
-            transition: opacity 0.35s, transform 0.35s;
+            transition: opacity 0.5s, transform 0.35s;
             opacity: 0;
-
-            &:hover {
-                opacity: 1;
-                transform: translate(0, 100px);
-            }
         }
     }
 }
+
 

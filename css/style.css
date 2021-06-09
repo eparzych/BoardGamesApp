@@ -468,12 +468,7 @@ header {
   overflow: hidden;
   background-color: #2f3238;
 }
-header:hover p {
-  opacity: 1;
-  transform: translate(0, 100px);
-}
-
-.hero-bg {
+header .hero-bg {
   position: relative;
   top: 0;
   height: 100%;
@@ -481,22 +476,16 @@ header:hover p {
   background-repeat: no-repeat;
   transition: opacity 1s, transform 1s;
 }
-.hero-bg:hover {
-  opacity: 0.6;
-  transform: scale3d(1.1, 1.1, 1);
-}
 
-.hero-img {
+.hero-text {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   height: 100%;
+  width: 100%;
 }
-
-.hero-text {
-  position: relative;
-  top: 0;
+.hero-text .hero-title {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -504,36 +493,42 @@ header:hover p {
   height: 100%;
   text-align: center;
   text-transform: uppercase;
-  font-size: 1.25em;
+  font-size: 65px;
+  color: #122547;
   cursor: pointer;
 }
-.hero-text h2 {
-  word-spacing: -0.15em;
-  font-weight: 300;
+.hero-text .hero-title:hover .hero-bg {
+  opacity: 0.6;
+  transform: scale3d(1.1, 1.1, 1);
 }
-.hero-text header h2 span {
+.hero-text .hero-title:hover p {
+  opacity: 1;
+  transform: translate(0, 50px);
+}
+.hero-text .hero-title:hover h2 {
+  transform: translate(0, -50px);
+}
+.hero-text .hero-title h2 {
   font-weight: 800;
+  transition: transform 0.35s;
 }
-.hero-text header h2,
-.hero-text header p {
-  margin: 0;
+.hero-text .hero-title h2 span {
+  font-weight: 800;
+  word-spacing: -0.15em;
 }
-.hero-text header p {
-  letter-spacing: 1px;
-  font-size: 68.5%;
+.hero-text .hero-title .logo__color1 {
+  color: #839dcf;
 }
-
-header p {
-  margin: 0 0 0.25em;
-  padding: 0.4em 1em;
-  background: rgba(255, 255, 255, 0.9);
-  color: #2f3238;
+.hero-text .hero-title .logo__color2 {
+  color: #1d3c77;
+}
+.hero-text .hero-title p {
+  font-size: 48px;
   text-transform: none;
+  letter-spacing: 1px;
+  color: #2f3238;
   font-weight: 500;
-  transition: opacity 0.35s, transform 0.35s;
-}
-
-p {
+  transition: opacity 0.5s, transform 0.35s;
   opacity: 0;
 }
 
@@ -738,11 +733,6 @@ ul {
 
 a {
   text-decoration: none;
-}
-
-h2 {
-  font-family: var(--font-raleway);
-  font-size: 2.25rem;
 }
 
 .container {
