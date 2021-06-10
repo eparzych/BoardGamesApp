@@ -448,6 +448,7 @@ textarea {
   height: 70px;
   background-color: rgba(255, 255, 255, 0.7);
   box-shadow: 1px 3px 6px #323232;
+  z-index: 1;
 }
 .nav__container {
   display: flex;
@@ -590,6 +591,21 @@ textarea {
   border-radius: 5px;
 }
 
+.btn__add__play {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 50px;
+  padding: 15px 35px;
+}
+
+.board__games__played__btn {
+  display: flex;
+  justify-content: flex-end;
+}
+.board__games__played__btn .btn {
+  margin: 10px 0px 10px 10px;
+}
+
 .btn-search {
   height: 100%;
 }
@@ -599,13 +615,6 @@ textarea {
   font-weight: bold;
   letter-spacing: 1px;
   padding: 15px 40px;
-}
-
-.btn__add__play {
-  font-size: 20px;
-  font-weight: bold;
-  margin-top: 50px;
-  padding: 15px 35px;
 }
 
 .section__login {
@@ -674,13 +683,6 @@ input {
   text-align: center;
 }
 
-.board__games__played .board__games__played__btn {
-  display: flex;
-  justify-content: flex-end;
-}
-.board__games__played .board__games__played__btn .btn {
-  margin: 10px 0px 10px 10px;
-}
 .board__games__played .played__game {
   display: flex;
   justify-content: space-between;
@@ -720,10 +722,16 @@ input {
   font-size: 22px;
   padding: 15px;
 }
+.bg .bg-list ul li {
+  display: inline;
+}
+
+.search {
+  display: flex;
+}
 
 .search__form {
   display: flex;
-  justify-content: flex-end;
   align-items: center;
   height: 55px;
 }
@@ -752,7 +760,6 @@ label {
   background-color: #333333;
   position: relative;
   top: -70px;
-  z-index: -1;
 }
 .header-index .header-index-bg {
   position: relative;
