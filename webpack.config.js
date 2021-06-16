@@ -1,14 +1,13 @@
 const path = require("path");
-const entryPath = "01_Dzien_1/02_Stan_aplikacji/02_Zadanie_2";
 
 module.exports = {
-  entry: `./${entryPath}/js/app.js`,
+  entry: "./js/app.js",
   output: {
     filename: "out.js",
-    path: path.resolve(__dirname, `${entryPath}/build`)
+    path: path.resolve(__dirname, "build")
   },
   devServer: {
-    contentBase: path.join(__dirname, `${entryPath}`),
+    contentBase: __dirname,
     publicPath: "/build/",
     compress: true,
     port: 3001,
@@ -20,7 +19,21 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_modules/,
         loader: "babel-loader"
-      }
+      },
+      {
+        test: /\.(scss|css)$/,
+        use: [
+          'style-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              url: false,
+              sourceMap: true
+            }
+          },
+          'sass-loader'
+        ],
+      },
     ]
   }
 };
