@@ -1,3 +1,12 @@
+.add__new__play__bg {
+    @include center;
+    height: 100vh;
+    background: url('../images/table-game.jpg') center/cover;
+    background-repeat: no-repeat;
+    color: white;
+    font-weight: bold;
+}
+
 label {
     display: block;
     font: 1rem 'Fira Sans', sans-serif;

@@ -12,7 +12,7 @@ export const Navigation = () => {
     return (
     <nav className="nav">
         <div className="nav__container container">
-            <a className="nav__logo" href="hello.js"><span className="logo__color1">Board</span><span className="logo__color2">GamesApp</span></a>
+            <Link to= "/" className="nav__logo"><span className="logo__color1">Board</span><span className="logo__color2">GamesApp</span></Link>
             <div className="navbar-nav">
                 <NavLink to= "/" activeClassName = "nav__elem">Home</NavLink>
                 <NavLink to = "/aboutus" activeClassName = "nav__elem"> o nas</NavLink>

@@ -10,7 +10,6 @@ import {
 import "../scss/style.scss";
 import { Hello } from "./hello.js";
 import { Login } from "./login.js";
-import { Navigation } from "./nav.js"
 import { Main } from "./main.js"
 import { AddPlay } from "./addplay.js"
 
