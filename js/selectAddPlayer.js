@@ -7,7 +7,7 @@ export const SelectAddPlayer = (props) => {
   const [showInput, setShowInput] = useState(false)
 
   const handleSelectPlayer = (event) => {
-    if (event.target.value === 'Inny gracz') {
+    if (event.target.value === 'newPlayer') {
       setPlayerName('');
       setShowInput(true);
     } else {
@@ -27,11 +27,11 @@ export const SelectAddPlayer = (props) => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <div>Wybierz pojazd lub dodaj inny:</div>
+      <div>Wybierz gracza lub dodaj nowego:</div>
       <select value={selectedPlayer} onChange={handleSelectPlayer}>
         <option />
         {players.map(player => <option key={player} value={player}>{player}</option>)}
-        <option value="Inny gracz">Inny gracz</option>
+        <option value="inny gracz">Inny gracz</option>
       </select>
       <div style={{display: showInput ? 'block' : 'none'}}>
         <label>Nowy gracz:</label>

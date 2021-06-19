@@ -1,5 +1,7 @@
 import React, {useState} from "react";
 import { SelectAddPlayer } from "./selectAddPlayer.js";
+import { Navigation } from "./main/nav";
+import { Footer } from "./main/footer.js";
 
 export const AddPlay = () => {
     const [title, setTitle] = useState("");
@@ -15,6 +17,7 @@ export const AddPlay = () => {
 
     return (
         <>
+        <Navigation />
         <section className="add__new__play__bg">
             <form>
                 <div>
@@ -42,6 +45,7 @@ export const AddPlay = () => {
                 </div>
             </form>
         </section>
+        <Footer />
 
         </>
 )}
