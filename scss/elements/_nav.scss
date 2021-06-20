@@ -13,17 +13,24 @@
     }
 
     .nav__elem {
-        padding: 12px 20px;
+        padding: 12px 12px;
+        margin-left: 4px;
         background-color: rgba(189, 189, 189, 0.363);
         color: rgb(47, 47, 47);
         font-weight: bold;
-        letter-spacing: 1px;
+        
+        // letter-spacing: 1px;
         text-transform: uppercase;
         border: 2px solid $white;
-        border-radius: 3px 
+        border-radius: 3px;
+        transition: .3s;
     }
 
     .nav__elem:hover {
-        background-color: rgba(136, 136, 136, 0.6);
+        background-color: rgba(189, 189, 189, 0.6);
+    }
+
+    .active__nav__elem {
+        background-color: rgba(148, 148, 148, 0.6);
     }
 }

@@ -10,15 +10,15 @@ import {
 
 export const Footer = () => {
     return (
-        <footer class="footer">
-            <div class="footer__container">
-                <div class="footer__copyright">
-                    &copy; Copyright <Link to="/main" class="footer__link">www.BoardGamesApp.pl</Link>
+        <footer className = "footer">
+            <div className = "footer__container">
+                <div className = "footer__copyright">
+                    &copy; Copyright <Link to="/main" className = "footer__link">www.BoardGamesApp.pl</Link>
                 </div>
-                <div class="footer__icons">
-                    <i class="fab fa-facebook-square "></i>
-                    <i class="fab fa-twitter-square"></i>
-                    <i class="fab fa-instagram"></i>
+                <div className = "footer__icons">
+                    <a href = "http://facebook.com"><i className = "fab fa-facebook-square" /></a>
+                    <a href = "http://twitter.com"><i className = "fab fa-twitter-square" /></a>
+                    <a href = "http://instagram.com"><i className = "fab fa-instagram" /></a>
                  </div>
             </div>
         </footer>

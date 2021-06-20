@@ -14,11 +14,11 @@ export const Navigation = () => {
         <div className="nav__container container">
             <Link to= "/" className="nav__logo"><span className="logo__color1">Board</span><span className="logo__color2">GamesApp</span></Link>
             <div className="navbar-nav">
-                <NavLink to= "/" activeClassName = "nav__elem">Home</NavLink>
-                <NavLink to = "/aboutus" activeClassName = "nav__elem"> o nas</NavLink>
-                <NavLink to = "/portfolio" activeClassName = "nav__elem">planszówki</NavLink>
-                <NavLink to = "/achievements" activeClassName = "nav__elem">osiągnięcia</NavLink>
-                <NavLink to = "/contact" activeClassName = "nav__elem">kontakt</NavLink>
+                <NavLink to = "/main" activeClassName = "active__nav__elem" className = "nav__elem">Home</NavLink>
+                <NavLink to = "/addplay" activeClassName = "active__nav__elem" className = "nav__elem"> Dodaj rozgrywkę</NavLink>
+                <NavLink to = "/main#boardGamesList" activeClassName = "active__nav__elem" className = "nav__elem">Lista planszówek</NavLink>
+                <NavLink to = "/main#boardGamesSquare" activeClassName = "active__nav__elem" className = "nav__elem">Lista rozgrywek</NavLink>
+                <NavLink to = "/contact" activeClassName = "active__nav__elem" className = "nav__elem">Profil</NavLink>
             </div>
         </div>
     </nav>

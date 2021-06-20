@@ -5,7 +5,7 @@
     .footer__container {
         width: 1024px;
         margin: 0 auto;
-        height: 60px;
+        height: $footer-height;
         @include between;
 
         .footer__copyright {
@@ -27,6 +27,7 @@
             .fab {
                 margin-left: 40px;
                 cursor: pointer;
+                color: white;
             }
         }
     }

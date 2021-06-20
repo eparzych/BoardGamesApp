@@ -1,17 +1,9 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import {
-    HashRouter,
-    Route,
-    Link,
-    Switch,
-    NavLink,
-  } from 'react-router-dom';
-
 
 export const BoardGamesList = () => {
     return (
-        <section  className="container bg">
+        <>
+        <section  className="bg container">
         <h1 className="bg__title">Tytuły planszówek, w które było grane:</h1>
           <div className="bg-list">
               <ul>
@@ -29,5 +21,6 @@ export const BoardGamesList = () => {
               </ul>
         </div>
     </section>
+    </>
     )
 }

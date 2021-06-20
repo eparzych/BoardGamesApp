@@ -1,11 +1,5 @@
 import React, { useState } from "react";
-import {
-  HashRouter,
-  Route,
-  Link,
-  Switch,
-  NavLink,
-} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export const Login = () => {
   const [login, setLogin] = useState("");
@@ -20,7 +14,7 @@ export const Login = () => {
               </label>
             </div>
             <div>
-              <label for="">
+              <label>
                 Hasło
                 <input type="text" placeholder="Hasło" value={ password } onChange={e => setPassword(e.target.value)} />
               </label>
