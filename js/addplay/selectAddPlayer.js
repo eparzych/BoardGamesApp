@@ -33,6 +33,8 @@ export const SelectAddPlayer = (props) => {
         {players.map(player => <option key={player} value={player}>{player}</option>)}
         <option value="newPlayer">Inny gracz</option>
       </select>
+
+      
       <div style={{display: showInput ? 'block' : 'none'}}>
         <label>Nowy gracz:</label>
         <input name="newPlayer" value={playerName} onChange={handlePlayerNameChange} />

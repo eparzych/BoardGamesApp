@@ -11,7 +11,7 @@ import "../scss/style.scss";
 import { Hello } from "./hello.js";
 import { Login } from "./login.js";
 import { Main } from "./main.js"
-import { AddPlay } from "./addplay/addplay.js"
+import { AddPlay } from "./addplay.js"
 
 const NotFound = () => {
     return <h1>404,Nothing is here</h1>;

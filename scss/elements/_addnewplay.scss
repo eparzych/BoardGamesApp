@@ -1,10 +1,14 @@
 .add__new__play__bg {
-    @include center;
-    height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 70px;
+    height: calc(100vh - 60px);
     background: url('../images/table-game.jpg') center/cover;
     background-repeat: no-repeat;
     color: white;
     font-weight: bold;
+    overflow-y: scroll;
+
 }
 
 label {
