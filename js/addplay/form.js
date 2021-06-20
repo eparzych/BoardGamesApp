@@ -27,6 +27,17 @@ export const FormAddPlay = () => {
         ]);
         console.log("add");
       };
+
+      const buttonSubmit = () => {
+          const dataForm = {
+              title,
+              date,
+              place,
+              playerPoints
+          }
+          console.log(dataForm);
+      } 
+
     return (
     <section className="add__new__play__bg">
         <form>
@@ -56,9 +67,8 @@ export const FormAddPlay = () => {
             <button type="submit" onClick={handleAddNewPlayerPoints}><i className="far fa-plus-square"></i></button>
 
             <div className="last">
-                <button className="btn">Zapisz</button>
+                <button className="btn" onClick={ buttonSubmit }>Zapisz</button>
             </div>
-
         </form>
     </section>
     )}
