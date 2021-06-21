@@ -6,15 +6,13 @@ export const FormAddPlay = () => {
     const [title, setTitle] = useState("");
     const [date, setDate] = useState("");
     const [place, setPlace] = useState("");
-    const [historyPlayers, setHistoryPlayers] = useState(["Mario", "Grześ", "Monia"]);
-    const [playerPoints, setPlayerPoints] = useState ([]);
-
-    const handleAddNewHistoryPlayer = (playerName) => {
-        setHistoryPlayers([
-          ...historyPlayers,
-          playerName,
-        ]);
-      };
+    const [playerPoints, setPlayerPoints] = useState ([
+        {
+            id: 0,
+            name: "",
+            points: 0,
+        }
+    ]);
     
     const handleAddNewPlayerPoints = () => {
         setPlayerPoints([
@@ -25,7 +23,20 @@ export const FormAddPlay = () => {
                 points: 0,
             }
         ]);
-        console.log("add");
+      };
+
+      const handleUpdatePlayer = (player) => {
+        console.log("update", player);
+        
+        const newPlayers = playerPoints.map(playerPoint => {
+            if(playerPoint.id === player.id){
+                return player;
+            } else {
+                return playerPoint;
+            }
+        });
+        setPlayerPoints(newPlayers);
+        console.log(newPlayers);
       };
 
       const buttonSubmit = () => {
@@ -61,10 +72,10 @@ export const FormAddPlay = () => {
             </div>
             <ul>
                 {playerPoints.map(player => (
-                    <li key={player.id}><AddNewPlayer players={historyPlayers} addNewPlayer={handleAddNewHistoryPlayer} /></li>
-                    ))} 
+                    <li key={player.id}><AddNewPlayer player={player} updatePlayer={handleUpdatePlayer} /></li>
+                    ))}
             </ul>
-            <button type="submit" onClick={handleAddNewPlayerPoints}><i className="far fa-plus-square"></i></button>
+            <button onClick={handleAddNewPlayerPoints}><i className="far fa-plus-square"></i></button>
 
             <div className="last">
                 <button className="btn" onClick={ buttonSubmit }>Zapisz</button>

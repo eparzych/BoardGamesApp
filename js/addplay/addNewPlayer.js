@@ -1,19 +1,33 @@
 import React, { useState } from 'react';
-import { SelectAddPlayer } from './selectAddPlayer.js';
-
-
 
 export const AddNewPlayer = (props) => {
-  const { players, addNewPlayer } = props;
-  const [points, setPoints] = useState("");
+  const { player, updatePlayer } = props;
+
+  const handleChangeName = (event) => {
+    const playerCopy = {...player};
+    playerCopy.name = event.target.value;
+    if (typeof updatePlayer === "function") {
+      updatePlayer(playerCopy);
+    }
+  }
+
+  const handleChangePoints = (event) => {
+    const playerCopy = {...player};
+    playerCopy.points = event.target.value;
+    if (typeof updatePlayer === "function") {
+      updatePlayer(playerCopy);
+    }
+  }
 
   return (
     <>
-    <SelectAddPlayer players={players} addNewPlayer={addNewPlayer} />
     <div>
+        <label>Nowy gracz:
+          <input value={player.name} onChange={handleChangeName} />
+        </label>
         <label>
             Wpisz ilość punktów
-            <input type="text" placeholder="Wpisz ilość punktów" value={points} onChange={e => setPoints(e.target.value)} />
+            <input type="text" placeholder="Wpisz ilość punktów" value={player.points} onChange={handleChangePoints} />
         </label>
     </div>
 </>
