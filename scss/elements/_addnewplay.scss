@@ -2,13 +2,12 @@
     display: flex;
     justify-content: center;
     padding-top: 70px;
-    height: calc(100vh - 60px);
+    height: $add-play-section-height;
     background: url('../images/table-game.jpg') center/cover;
     background-repeat: no-repeat;
     color: white;
     font-weight: bold;
     overflow-y: scroll;
-
 }
 
 label {

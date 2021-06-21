@@ -6,13 +6,7 @@ export const FormAddPlay = () => {
     const [title, setTitle] = useState("");
     const [date, setDate] = useState("");
     const [place, setPlace] = useState("");
-    const [playerPoints, setPlayerPoints] = useState ([
-        {
-            id: 0,
-            name: "",
-            points: 0,
-        }
-    ]);
+    const [playerPoints, setPlayerPoints] = useState ([]);
     
     const handleAddNewPlayerPoints = () => {
         setPlayerPoints([
