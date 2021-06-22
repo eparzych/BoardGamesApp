@@ -1,23 +1,20 @@
 import React, { useState } from 'react';
 import { AddNewPlayer } from "./addNewPlayer.js";
 
-
 export const FormAddPlay = () => {
     const [title, setTitle] = useState("");
     const [date, setDate] = useState("");
     const [place, setPlace] = useState("");
-    const [playerPoints, setPlayerPoints] = useState ([]);
+    const [playersPoints, setPlayerPoints] = useState ([]);
     
-    const handleAddNewPlayerPoints = () => {
-        setPlayerPoints([
-            ...playerPoints,
-            {
-                id: playerPoints.length,
-                name: "",
-                points: 0,
-            }
-        ]);
-      };
+    const handleAddNewPlayerPoints = (point) => {
+        setPlayerPoints(prevPlayerPoints => {
+            return [
+                point,
+                ...prevPlayerPoints
+        ];
+      });
+    }
 
       const handleUpdatePlayer = (player) => {
         console.log("update", player);
@@ -65,7 +62,7 @@ export const FormAddPlay = () => {
                 </label>
             </div>
             <ul>
-                {playerPoints.map(player => (
+                {playersPoints.map(player => (
                     <li key={player.id}><AddNewPlayer player={player} updatePlayer={handleUpdatePlayer} /></li>
                     ))}
             </ul>

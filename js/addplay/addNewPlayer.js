@@ -1,37 +1,50 @@
 import React, { useState } from 'react';
 
-
-
 export const AddNewPlayer = (props) => {
   const { player, updatePlayer } = props;
+  const { name, setName } = useState();
+  const { points, setPoints } = useState();
+  
+  // player = {
+  //   id
+  //   name,
+  //   points
+  // }
 
-  const handleChangeName = (event) => {
-    const playerCopy = {...player};
-    playerCopy.name = event.target.value;
-    if (typeof updatePlayer === "function") {
-      updatePlayer(playerCopy);
-    }
+  const handleChangeName = (e) => {
+    e.preventDefault();
+    player.name = e.target.value;
+    setName(player.name);
+    updatePlayer(name);
+    console.log(player);
   }
 
-  const handleChangePoints = (event) => {
-    const playerCopy = {...player};
-    playerCopy.points = event.target.value;
-    if (typeof updatePlayer === "function") {
-      updatePlayer(playerCopy);
-    }
+  const handleChangePoints = (e) => {
+    e.preventDefault();
+    player.points = e.target.value;
+    setPoints(player.points);
+    updatePlayer(points);
+    console.log(player);
   }
 
   return (
     <>
-    <div>
+    <form>
         <label>Nowy gracz:
-          <input value={player.name} onChange={handleChangeName} />
+          <input type="text" 
+                 name="name"
+                 placeholder="Wpisz imię gracza"
+                 value={name} 
+                 onChange={handleChangeName} />
         </label>
         <label>
             Wpisz ilość punktów
-            <input type="text" placeholder="Wpisz ilość punktów" value={player.points} onChange={handleChangePoints} />
+            <input type="text"
+                   name="points" 
+                   placeholder="Wpisz ilość punktów" 
+                   value={points} 
+                   onChange={handleChangePoints} />
         </label>
-    </div>
-</>
-
-  )}
+    </form>
+  </>
+)}

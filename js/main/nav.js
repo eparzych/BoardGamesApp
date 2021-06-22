@@ -17,7 +17,6 @@ export const Navigation = () => {
                 <NavLink to = "/main" activeClassName = "active__nav__elem" className = "nav__elem">Home</NavLink>
                 <NavLink to = "/addplay" activeClassName = "active__nav__elem" className = "nav__elem"> Dodaj rozgrywkę</NavLink>
                 <NavLink to = "/competitionlist" activeClassName = "active__nav__elem" className = "nav__elem">Lista rozgrywek</NavLink>
-                <NavLink to = "/contact" activeClassName = "active__nav__elem" className = "nav__elem">Profil</NavLink>
             </div>
         </div>
     </nav>
