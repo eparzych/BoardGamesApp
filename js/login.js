@@ -10,13 +10,13 @@ export const Login = () => {
             <div>
               <label>
                 Login
-                <input type="text" placeholder="Login" value={ Login } onChange={e => setLogin(e.target.value)}/>
+                <input className="login__input" type="text" placeholder="Login" value={ login } onChange={e => setLogin(e.target.value)}/>
               </label>
             </div>
             <div>
               <label>
                 Hasło
-                <input type="text" placeholder="Hasło" value={ password } onChange={e => setPassword(e.target.value)} />
+                <input className="login__input" type="text" placeholder="Hasło" value={ password } onChange={e => setPassword(e.target.value)} />
               </label>
             </div>
             <div className="last">

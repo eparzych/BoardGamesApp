@@ -13,6 +13,11 @@
     padding: 15px 35px;
 }
 
+.add__player {
+    font-size: 32px;
+    color: $logo-color2;
+}
+
 .board__games__played__btn{
     display: flex;
     justify-content: flex-end;
@@ -31,4 +36,11 @@
     font-weight: bold;
     letter-spacing: 1px;
     padding: 15px 40px;
+}
+.last {
+    margin: 40px 0;
+}
+
+.btn__submit {
+    margin: 18px 0;
 }

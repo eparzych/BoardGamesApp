@@ -1,8 +1,7 @@
 .header-index {
     height: $header-height;
-    // overflow: hidden;
+    overflow: hidden;
     background-color:  #333333;
-    top: -$nav-height;
 
     .header-index-bg {
         position: relative;
@@ -31,7 +30,7 @@
         text-transform: uppercase;
         font-size: 50px;
         color: #122547;
-        cursor: pointer;
+
 
         h2 {
             font-weight: 600;

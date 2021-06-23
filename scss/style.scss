@@ -1,8 +1,9 @@
 @import "generic/reset";
 
 @import "settings/colors";
-@import "settings/fonts";
 @import "settings/mixins";
+@import "settings/fonts";
+@import "settings/component_height";
 
 @import "elements/nav";
 @import "elements/welcome";
@@ -23,15 +24,15 @@
   }
   
   body {
-    font-family: var(--font-open-sans);
+    font-family: 'Times New Roman', sans-serif;
   }
   
   ul {
-  list-style: none;
+    list-style: none;
   }
   
   a {
-  text-decoration: none;
+    text-decoration: none;
   }
 
   .container {
