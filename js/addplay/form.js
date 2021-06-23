@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useEffect } from 'react';
 import { AddNewPlayer } from "./addNewPlayer.js";
 
 export const FormAddPlay = () => {
@@ -7,32 +8,52 @@ export const FormAddPlay = () => {
     const [place, setPlace] = useState("");
     const [name, setName] = useState ("");
     const [points, setPoints] = useState ("");
-    const [playersPoints, setPlayersPoints] = useState ([]);
+    const [players, setPlayers] = useState ([]);
+    // const [dataForm, setDataForm] = useState ();
     
-    const handleAddNewPlayerPoints = (e) => {
+    const handleAddNewPlayer = (e) => {
         e.preventDefault();
-        setPlayersPoints(prevPlayersPoints => [...prevPlayersPoints, {
-            id: prevPlayersPoints.length,
+        const handleClick = () => {
+            setToggle((prev) => !prev);
+        }
+        setPlayers(prevPlayers => [...prevPlayers, {
+            id: prevPlayers.length,
             name,
             points
         }]);
-        setName("");
-        setPoints("");
     }
 
-      const buttonSubmit = (e) => {
+    useEffect(() => {
+        setName("");
+        setPoints("");
+    }, [players]);
+
+    const buttonSubmit = (e) => {
         e.preventDefault();
           const dataForm = {
               title,
               date,
               place,
-              playersPoints
+              players
           }
           console.log(dataForm);
-      } 
+    };
 
+    // if(dataForm!== ""){
+    //     useEffect(() => {
+    //         setTitle("");
+    //         setDate("");
+    //         setPlace("");
+    //         setName("");
+    //         setPoints("");
+    //         setPlayers("");
+    //     }, []);
+    // }
+    
     return (
     <section className="add__new__play__bg">
+
+
         <form>
             <label >
                 Nazwa planszówki
@@ -47,7 +68,7 @@ export const FormAddPlay = () => {
                 <input className="new__play__input" type="text" placeholder="Miejsce grania" value={place} onChange={e => setPlace(e.target.value)} />
             </label>
             <label>
-                Nowy gracz:
+                Imię gracza:
                 <input className="new__play__input" type="text" 
                         name="name"
                         placeholder="Wpisz imię gracza"
@@ -55,7 +76,7 @@ export const FormAddPlay = () => {
                         onChange={e => setName(e.target.value)}  />
             </label>
             <label>
-                Wpisz ilość punktów
+                Ilość punktów:
                 <input className="new__play__input"
                         type="text"
                         name="points" 
@@ -63,12 +84,16 @@ export const FormAddPlay = () => {
                         value={points} 
                         onChange={e => setPoints(e.target.value)}  />
             </label>
-            <button onClick={handleAddNewPlayerPoints}><i className="far fa-plus-square add__player"></i></button>
+            <button onClick={handleAddNewPlayer}>
+                <i className="far fa-plus-square add__player"></i>
+            </button>
+
             <ul className="new__player">
-                {playersPoints.map(player => (
-                        <AddNewPlayer key={player.id} player={player} />
+                {players.map(player => (
+                    <AddNewPlayer key={player.id} player={player} />
                     ))}
             </ul>
+
             <button className="btn btn__submit" onClick={ buttonSubmit }>Zapisz</button>
         </form>
     </section>
