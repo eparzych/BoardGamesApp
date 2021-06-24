@@ -7,7 +7,7 @@ module.exports = {
     path: path.resolve(__dirname, "build")
   },
   devServer: {
-    contentBase: __dirname,
+    contentBase: path.join(__dirname, "public"),
     publicPath: "/build/",
     compress: true,
     port: 3001,
@@ -27,8 +27,7 @@ module.exports = {
           {
             loader: 'css-loader',
             options: {
-              url: false,
-              sourceMap: true
+              url: false
             }
           },
           'sass-loader'

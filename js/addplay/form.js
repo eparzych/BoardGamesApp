@@ -13,9 +13,7 @@ export const FormAddPlay = () => {
     
     const handleAddNewPlayer = (e) => {
         e.preventDefault();
-        const handleClick = () => {
-            setToggle((prev) => !prev);
-        }
+
         setPlayers(prevPlayers => [...prevPlayers, {
             id: prevPlayers.length,
             name,
@@ -38,22 +36,9 @@ export const FormAddPlay = () => {
           }
           console.log(dataForm);
     };
-
-    // if(dataForm!== ""){
-    //     useEffect(() => {
-    //         setTitle("");
-    //         setDate("");
-    //         setPlace("");
-    //         setName("");
-    //         setPoints("");
-    //         setPlayers("");
-    //     }, []);
-    // }
     
     return (
     <section className="add__new__play__bg">
-
-
         <form>
             <label >
                 Nazwa planszówki
@@ -97,4 +82,14 @@ export const FormAddPlay = () => {
             <button className="btn btn__submit" onClick={ buttonSubmit }>Zapisz</button>
         </form>
     </section>
+
+
+// return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       resolve(names);
+//     }, 2000);
+//   });
     )}
+
+
+    // export default dataForm;
