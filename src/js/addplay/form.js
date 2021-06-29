@@ -9,7 +9,6 @@ export const FormAddPlay = () => {
     const [name, setName] = useState ("");
     const [points, setPoints] = useState ("");
     const [players, setPlayers] = useState ([]);
-    // const [dataForm, setDataForm] = useState ();
     
     const handleAddNewPlayer = (e) => {
         e.preventDefault();
@@ -82,14 +81,4 @@ export const FormAddPlay = () => {
             <button className="btn btn__submit" onClick={ buttonSubmit }>Zapisz</button>
         </form>
     </section>
-
-
-// return new Promise((resolve, reject) => {
-//     setTimeout(() => {
-//       resolve(names);
-//     }, 2000);
-//   });
     )}
-
-
-    // export default dataForm;

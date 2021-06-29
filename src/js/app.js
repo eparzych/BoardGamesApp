@@ -12,7 +12,7 @@ import { Hello } from "./hello.js";
 import { Login } from "./login.js";
 import { Main } from "./main.js"
 import { AddPlay } from "./addplay.js"
-import { CompetitionList } from "./competitionlist.js"
+import { GameplayList } from "./gameplayslist.js"
 
 
 const NotFound = () => {
@@ -27,7 +27,7 @@ const App = () => {
                 <Route path='/login' component={Login} />
                 <Route path='/main' component={Main} />
                 <Route path='/addplay' component={AddPlay} />
-                <Route path='/competitionlist' component={CompetitionList} />
+                <Route path='/gameplayslist' component={GameplayList} />
                 <Route component={NotFound} />
             </Switch>
         </HashRouter>

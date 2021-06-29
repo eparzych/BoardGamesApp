@@ -1,9 +1,19 @@
+.article__list h1 {
+  @include center;
+  padding-bottom: 15px;
+  font-size: 20px;
+  font-family: 'Anton', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: $logo-color2;
+}
+
 .board__games__played {
   .played__game {
-
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
     height: $board-games-section-height;
+    overflow-y: scroll;
     
     article {
       display: flex;
@@ -11,15 +21,21 @@
       justify-content: center;
       align-items: center;
       margin-right: 50px;
-      margin-bottom: 50px;
+      margin-bottom: 20px;
       padding: 15px;
       color: black;
-      border: 1px solid black;
-      border-radius: 3px;
-      height: 250px;
+      height: 263px;
+      width: 195px;
+      background: url(../images/paper.jpg) center/cover;
+      background-repeat: no-repeat;
+      overflow: hidden;
 
-      &:nth-child(4) {
-        margin-right: 0;
+      &:nth-child(4n+1) {
+        margin-left: 41px;
+      }
+
+      &:nth-child(4n) {
+        margin-right: 41px;
       }
 
       .played__board__game__title {

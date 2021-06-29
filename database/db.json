@@ -1,0 +1,152 @@
+{
+    "gameplays": [
+      {
+        "date": "2021-06-24T20:10",
+        "place": "Gdańsk",
+        "players": [
+        {
+            "id": 0,
+            "name": "Monia",
+            "points": 100
+        },
+        {
+            "id": 1,
+            "name": "Emilia",
+            "points": 99
+        },
+        {
+          "id": 2,
+          "name": "Monia",
+          "points": 100
+      },
+      {
+          "id": 3,
+          "name": "Emilia",
+          "points": 99
+      }],
+        "title": "Detektyw"
+      },
+      {
+        "date": "2021-06-24T20:10",
+        "place": "Gdańsk",
+        "players": [
+        {
+            "id": 4,
+            "name": "Monia",
+            "points": 100
+        },
+        {
+            "id": 5,
+            "name": "Emilia",
+            "points": 99
+        },
+        {
+          "id": 6,
+          "name": "Monia",
+          "points": 100
+      },
+      {
+          "id": 7,
+          "name": "Emilia",
+          "points": 99
+      }],
+        "title": "Detektyw"
+      },
+      {
+        "date": "2021-06-24T20:10",
+        "place": "Gdańsk",
+        "players": [
+        {
+            "id": 8,
+            "name": "Monia",
+            "points": 100
+        },
+        {
+            "id": 9,
+            "name": "Emilia",
+            "points": 99
+        }],
+        "title": "Detektyw"
+      },
+      {
+        "date": "2021-06-24T20:10",
+        "place": "Gdańsk",
+        "players": [
+        {
+            "id": 10,
+            "name": "Monia",
+            "points": 100
+        },
+        {
+            "id": 11,
+            "name": "Emilia",
+            "points": 99
+        }],
+        "title": "Detektyw"
+      },
+      {
+        "date": "2021-06-24T20:10",
+        "place": "Gdańsk",
+        "players": [
+        {
+            "id": 12,
+            "name": "Monia",
+            "points": 100
+        },
+        {
+            "id": 13,
+            "name": "Emilia",
+            "points": 99
+        }],
+        "title": "Detektyw"
+      },
+      {
+        "date": "2021-06-24T20:10",
+        "place": "Gdańsk",
+        "players": [
+        {
+            "id": 14,
+            "name": "Monia",
+            "points": 100
+        },
+        {
+            "id": 15,
+            "name": "Emilia",
+            "points": 99
+        }],
+        "title": "Detektyw"
+      },
+      {
+        "date": "2021-06-24T20:10",
+        "place": "Gdańsk",
+        "players": [
+        {
+            "id": 16,
+            "name": "Monia",
+            "points": 100
+        },
+        {
+            "id": 17,
+            "name": "Emilia",
+            "points": 99
+        }],
+        "title": "Detektyw"
+      },
+      {
+        "date": "2021-06-24T20:10",
+        "place": "Gdańsk",
+        "players": [
+        {
+            "id": 18,
+            "name": "Monia",
+            "points": 100
+        },
+        {
+            "id": 19,
+            "name": "Emilia",
+            "points": 99
+        }],
+        "title": "Detektyw"
+      }
+    ]
+  }
