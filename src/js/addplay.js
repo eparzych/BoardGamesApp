@@ -7,8 +7,8 @@ export const AddPlay = () => {
 
     return (
         <>
-        <Navigation />
-        <FormAddPlay />
-        <Footer />
+            <Navigation />
+            <FormAddPlay />
+            <Footer />
         </>
 )}

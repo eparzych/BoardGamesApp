@@ -8,11 +8,11 @@ export const BoardGamesSquare = ({gameplay}) => {
             <span className="played__board__game__text">
                 {gameplay.date} {gameplay.place}
 
-                <ul className="new__player">
+                {/* <ul className="new__player">
                     {gameplay.players.map(player => (
                         <AddNewPlayer key={player.id} player={player} />
                         ))}
-                </ul>
+                </ul> */}
             </span>
         </article>
     )}
