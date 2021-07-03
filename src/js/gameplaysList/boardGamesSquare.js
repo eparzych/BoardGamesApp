@@ -1,5 +1,4 @@
 import React from "react";
-import { AddNewPlayer } from "../addplay/addNewPlayer";
 
 export const BoardGamesSquare = ({gameplay}) => {
     return (
@@ -10,7 +9,7 @@ export const BoardGamesSquare = ({gameplay}) => {
 
                 {/* <ul className="new__player">
                     {gameplay.players.map(player => (
-                        <AddNewPlayer key={player.id} player={player} />
+                        <li key={player.id}> {player.name} {player.points} </li>
                         ))}
                 </ul> */}
             </span>

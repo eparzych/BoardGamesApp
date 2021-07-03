@@ -5,7 +5,11 @@ export const FormAddPlay = () => {
     const [title, setTitle] = useState("");
     const [date, setDate] = useState("");
     const [place, setPlace] = useState("");
-    const [players, setPlayers] = useState ([]);
+    const [players, setPlayers] = useState ([{
+        id: 0,
+        name: "",
+        points: 0,
+    }]);
     
     // 1. TWORZENIE NOWEGO OBIEKTU W STANIE PO WCISNIĘCIU +
     const handleAddNewPlayer = (e) => {
@@ -20,7 +24,7 @@ export const FormAddPlay = () => {
     const handleUpdatePlayer = (updatedPlayer) => {
         setPlayers(prevPlayers => prevPlayers.map(player => {
             if(player.id === updatedPlayer.id){
-                return updatePlayer;
+                return updatedPlayer;
             } else {
                 return player;
             }
@@ -42,8 +46,9 @@ export const FormAddPlay = () => {
             headers: {
                 "Content-Type": "application/json"
             }
-      })
-    } 
+        })
+        console.log(dataForm);
+    };
 
     return (
     <section className="add__new__play__bg">
@@ -75,7 +80,6 @@ export const FormAddPlay = () => {
                     ))}
             </ul>
             <button onClick={handleAddNewPlayer}><i className="far fa-plus-square add__player"></i></button>
-
             <div className="last">
                 <button className="btn" onClick={ buttonSubmit }>Zapisz</button>
             </div>

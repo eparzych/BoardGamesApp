@@ -22,7 +22,7 @@ export const Login = () => {
     return setRedirectToReferrer(true);
   }
 
-  if (redirectToReferrer === true){
+  if (redirectToReferrer){
     console.log(redirectToReferrer);
     return <Redirect to="/main" />
   }
