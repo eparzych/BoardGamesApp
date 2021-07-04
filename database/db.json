@@ -146,188 +146,32 @@
       "title": "Detektyw"
     },
     {
-      "id": 5,
-      "date": "2021-06-24T20:10",
-      "place": "Gdańsk",
+      "title": "",
+      "date": "",
+      "place": "",
       "players": [
         {
-          "id": 14,
-          "name": "Monia",
-          "points": 100
+          "id": 0,
+          "name": "",
+          "points": 0
         },
         {
-          "id": 15,
-          "name": "Emilia",
-          "points": 99
-        }
-      ],
-      "title": "Detektyw"
-    },
-    {
-      "id": 6,
-      "date": "2021-06-24T20:10",
-      "place": "Gdańsk",
-      "players": [
-        {
-          "id": 16,
-          "name": "Monia",
-          "points": 100
+          "id": 1,
+          "name": "",
+          "points": 0
         },
         {
-          "id": 17,
-          "name": "Emilia",
-          "points": 99
-        }
-      ],
-      "title": "Detektyw"
-    },
-    {
-      "id": 7,
-      "date": "2021-06-24T20:10",
-      "place": "Gdańsk",
-      "players": [
-        {
-          "id": 18,
-          "name": "Monia",
-          "points": 100
+          "id": 2,
+          "name": "",
+          "points": 0
         },
         {
-          "id": 19,
-          "name": "Emilia",
-          "points": 99
-        }
-      ],
-      "title": "Detektyw"
-    },
-    {
-      "title": "",
-      "date": "",
-      "place": "",
-      "players": [
-        {
-          "id": 0,
+          "id": 3,
           "name": "",
           "points": 0
         }
       ],
-      "id": 8
-    },
-    {
-      "title": "",
-      "date": "",
-      "place": "aaaa",
-      "players": [
-        {
-          "id": 0,
-          "name": "eee",
-          "points": 0
-        }
-      ],
-      "id": 9
-    },
-    {
-      "title": "",
-      "date": "",
-      "place": "",
-      "players": [
-        {
-          "id": 0,
-          "name": "",
-          "points": 0
-        }
-      ],
-      "id": 10
-    },
-    {
-      "title": "",
-      "date": "",
-      "place": "",
-      "players": [
-        {
-          "id": 0,
-          "name": "",
-          "points": 0
-        }
-      ],
-      "id": 11
-    },
-    {
-      "title": "",
-      "date": "",
-      "place": "",
-      "players": [
-        {
-          "id": 0,
-          "name": "",
-          "points": 0
-        }
-      ],
-      "id": 12
-    },
-    {
-      "title": "",
-      "date": "",
-      "place": "",
-      "players": [
-        {
-          "id": 0,
-          "name": "",
-          "points": 0
-        }
-      ],
-      "id": 13
-    },
-    {
-      "title": "",
-      "date": "",
-      "place": "",
-      "players": [
-        {
-          "id": 0,
-          "name": "",
-          "points": 0
-        }
-      ],
-      "id": 14
-    },
-    {
-      "title": "",
-      "date": "",
-      "place": "",
-      "players": [
-        {
-          "id": 0,
-          "name": "",
-          "points": 0
-        }
-      ],
-      "id": 15
-    },
-    {
-      "title": "",
-      "date": "",
-      "place": "",
-      "players": [
-        {
-          "id": 0,
-          "name": "",
-          "points": 0
-        }
-      ],
-      "id": 16
-    },
-    {
-      "title": "",
-      "date": "",
-      "place": "",
-      "players": [
-        {
-          "id": 0,
-          "name": "",
-          "points": 0
-        }
-      ],
-      "id": 17
+      "id": 5
     }
   ]
 }

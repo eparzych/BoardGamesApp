@@ -1,0 +1,15 @@
+.board__games {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: $header-height;
+    align-items: center;
+    color: black;
+    // margin-bottom: 50px;
+    background-image: url(../images/paper2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+
+}
+  

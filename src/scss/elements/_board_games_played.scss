@@ -29,6 +29,7 @@
       background: url(../images/paper.jpg) center/cover;
       background-repeat: no-repeat;
       overflow: hidden;
+      cursor: pointer;
 
       &:nth-child(4n+1) {
         margin-left: 41px;
