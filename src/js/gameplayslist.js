@@ -1,9 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Navigation } from "./main/nav.js";
-import { List } from "./gameplaysList/list.js";
-import { ClickArticle  } from "./gameplaysList/clickArticle.js";
-
-
+import { BoardGamesSquare } from "./gameplaysList/boardGamesSquare.js";
 import { Footer } from "./main/footer.js";
 
 export const GameplayList = () => {
@@ -12,11 +9,74 @@ export const GameplayList = () => {
     const [filteredGameplays, setFilteredGameplays] = useState([]);
     const [gameplayClick, setGameplayClick] = useState(false);
     
+    useEffect(() => {
+        fetch("http://localhost:3000/gameplays")
+        .then(response => {
+            if (response.ok)
+                return response.json();
+            else
+                throw new Error('Błąd sieci!');
+        }).then(data => {
+            console.log('responseData', data);
+            if (data) {
+                setGameplays(data);
+                setFilteredGameplays(data);
+              }
+        })
+        .catch(error => {
+            console.log(error);
+        });
+    }, []);
+
+    const handleSearch = (e) => {
+        e.preventDefault();
+        const searchLower = search.toLowerCase();
+        setFilteredGameplays(gameplays.filter(el => 
+            el.title.toLowerCase().includes(searchLower) || 
+            el.place.toLowerCase().includes(searchLower) ||
+            el.date.toLowerCase().includes(searchLower)
+            ))
+    }
+    if (gameplayClick === false){
     return (
-    <> 
+    <>
         <Navigation />
-        { gameplayClick === false ? <List /> : <ClickArticle /> }
+        <section className="container search">
+            <form className="search__form">
+                <input value={search} 
+                       onChange={e => setSearch(e.target.value)} 
+                       id="search-input" 
+                       type="text"/>
+                <button onClick={handleSearch} 
+                        className="btn btn-search">
+                        <i className="fas fa-search"></i> Wyszukaj planszówkę
+                </button>            
+            </form>
+        </section>
+        <div className="container article__list">
+            <h1>Zagrane rozgrywki:</h1>
+            <section className="board__games__played">
+                <div className="played__game">            
+                    {filteredGameplays.map(gameplay =>
+                        <BoardGamesSquare key={gameplay.id} gameplay={gameplay} onClick={ e => setGameplayClick(gameplay)} />
+                    )}
+                </div>
+                <div className="modal">
+            </section>
+        </div>
         <Footer />
     </>
-    )
+)} else {
+
+    return (
+        <>
+            <Navigation />
+            <section className="board__games container">
+            <p>klikniety {gameplayClick.title}</p>
+            </section>
+            <Footer />
+        </>
+    ) 
+
+}
 }

@@ -2,6 +2,8 @@ import React from "react";
 import { BoardGamesSquare } from "./gameplaysList/boardGamesSquare.js";
 
 export const List = () => {
+    const [gameplays, setGameplays] = useState([]);
+    const [search, setSearch] = useState("");
 
     useEffect(() => {
         fetch("http://localhost:3000/gameplays")
