@@ -22,7 +22,7 @@
       align-items: center;
       margin-right: 50px;
       margin-bottom: 20px;
-      padding: 15px;
+      padding: 20px;
       color: black;
       height: 263px;
       width: 195px;
@@ -41,13 +41,18 @@
 
       .played__board__game__title {
         padding-bottom: 20px;
-        font-size: 25px;
+        font-size: 24px;
+        font-family: 'Merienda', cursive;
+        font-weight: 300;
         text-align: center;
+        text-transform: uppercase;
+ 
       }
 
       .played__board__game__text{
         text-align: center;
         font-size: 18px;
+        font-family: 'Yomogi', cursive;
       }
     }
   }

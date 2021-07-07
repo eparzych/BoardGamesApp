@@ -1,15 +1,40 @@
 .board__games {
-    display: flex;
+    @include center;
     flex-direction: column;
-    justify-content: center;
     height: $board-game-height;
-    align-items: center;
-    color: black;
-    // margin-bottom: 50px;
     background-image: url(../images/paper2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
+    position: relative;
 
+    .escape__button {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 55px;
+        font-size: 48px;
+        color: $brown;
+        cursor: pointer;
+    }
+    
+    .board__games__title {
+        font-size: 55px;
+        font-family: 'Merienda', cursive;
+    }
+
+    .new__game {
+        font-size: 35px;
+        padding: 35px 0;
+        color: $brown;
+        font-family: 'Yomogi', cursive;
+        font-family: 'Bigelow Rules', cursive;
+        letter-spacing: 2px;
+
+        .pleyer__list {
+            margin-top: 20px;
+        }
+
+    }
 }
   
