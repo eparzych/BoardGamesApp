@@ -6,7 +6,7 @@ import {
 export const Login = () => {
   const [login, setLogin] = useState("");
   const [password, setPassword] = useState("");
-  const [ redirectToReferrer, setRedirectToReferrer] = useState(false);
+  const [redirectToReferrer, setRedirectToReferrer] = useState(false);
 
   const clickSaveBtn = (e) => {
     e.preventDefault();
@@ -19,11 +19,10 @@ export const Login = () => {
     localStorage.setItem("user", JSON.stringify(userInfo));
     console.log(userInfo);
 
-    return setRedirectToReferrer(true);
+    setRedirectToReferrer(true);
   }
 
   if (redirectToReferrer){
-    console.log(redirectToReferrer);
     return <Redirect to="/main" />
   }
 
