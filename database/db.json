@@ -34,11 +34,6 @@
           "id": 5,
           "name": "Monia",
           "points": 100
-        },
-        {
-          "id": 6,
-          "name": "Emilia",
-          "points": 99
         }
       ],
       "title": "Detektyw"
@@ -49,22 +44,22 @@
       "place": "Gdańsk",
       "players": [
         {
-          "id": 11,
+          "id": 0,
           "name": "Monia",
           "points": 100
         },
         {
-          "id": 12,
+          "id": 1,
           "name": "Emilia",
           "points": 99
         },
         {
-          "id": 13,
+          "id": 2,
           "name": "Monia",
           "points": 100
         },
         {
-          "id": 14,
+          "id": 3,
           "name": "Emilia",
           "points": 99
         }
@@ -77,12 +72,12 @@
       "place": "Gdańsk",
       "players": [
         {
-          "id": 15,
+          "id": 0,
           "name": "Monia",
           "points": 100
         },
         {
-          "id": 16,
+          "id": 1,
           "name": "Emilia",
           "points": 99
         }
@@ -95,12 +90,12 @@
       "place": "Gdańsk",
       "players": [
         {
-          "id": 17,
+          "id": 0,
           "name": "Monia",
           "points": 100
         },
         {
-          "id": 18,
+          "id": 1,
           "name": "Emilia",
           "points": 99
         }
@@ -113,12 +108,12 @@
       "place": "Gdańsk",
       "players": [
         {
-          "id": 19,
+          "id": 0,
           "name": "Monia",
           "points": 100
         },
         {
-          "id": 20,
+          "id": 1,
           "name": "Emilia",
           "points": 99
         }
@@ -131,12 +126,12 @@
       "place": "Gdańsk",
       "players": [
         {
-          "id": 21,
+          "id": 0,
           "name": "Monia",
           "points": 100
         },
         {
-          "id": 22,
+          "id": 1,
           "name": "Emilia",
           "points": 99
         }
@@ -149,12 +144,12 @@
       "place": "Gdańsk",
       "players": [
         {
-          "id": 23,
+          "id": 0,
           "name": "Monia",
           "points": 100
         },
         {
-          "id": 24,
+          "id": 1,
           "name": "Emilia",
           "points": 99
         }
@@ -162,149 +157,17 @@
       "title": "Splendor"
     },
     {
-      "title": "",
-      "date": "",
-      "place": "",
+      "title": "7 cudów świata",
+      "date": "2021-07-10T21:38",
+      "place": "Gdańsk",
       "players": [
         {
           "id": 0,
-          "name": "",
-          "points": 0
-        },
-        {
-          "id": 1,
-          "name": "",
-          "points": 0
-        },
-        {
-          "id": 2,
-          "name": "",
-          "points": 0
-        },
-        {
-          "id": 3,
-          "name": "",
-          "points": 0
-        }
-      ],
-      "id": 7
-    },
-    {
-      "title": "",
-      "date": "",
-      "place": "",
-      "players": [
-        {
-          "id": 0,
-          "name": "",
-          "points": 0
+          "name": "e",
+          "points": "10"
         }
       ],
       "id": 8
-    },
-    {
-      "title": "",
-      "date": "",
-      "place": "",
-      "players": [
-        {
-          "id": 0,
-          "name": "",
-          "points": 0
-        }
-      ],
-      "id": 9
-    },
-    {
-      "title": "",
-      "date": "",
-      "place": "",
-      "players": [
-        {
-          "id": 0,
-          "name": "",
-          "points": 0
-        }
-      ],
-      "id": 10
-    },
-    {
-      "title": "",
-      "date": "",
-      "place": "",
-      "players": [
-        {
-          "id": 0,
-          "name": "",
-          "points": 0
-        }
-      ],
-      "id": 11
-    },
-    {
-      "title": "",
-      "date": "",
-      "place": "",
-      "players": [
-        {
-          "id": 0,
-          "name": "",
-          "points": 0
-        }
-      ],
-      "id": 12
-    },
-    {
-      "title": "",
-      "date": "",
-      "place": "",
-      "players": [
-        {
-          "id": 0,
-          "name": "",
-          "points": 0
-        }
-      ],
-      "id": 13
-    },
-    {
-      "title": "",
-      "date": "",
-      "place": "",
-      "players": [
-        {
-          "id": 0,
-          "name": "",
-          "points": 0
-        }
-      ],
-      "id": 14
-    },
-    {
-      "title": "",
-      "date": "",
-      "place": "",
-      "players": [
-        {
-          "id": 0,
-          "name": "",
-          "points": 0
-        }
-      ],
-      "id": 15
-    },
-    {
-      "title": "",
-      "date": "",
-      "place": "",
-      "players": [
-        {
-          "id": 0,
-          "name": "",
-          "points": 0
-        }
-      ],
-      "id": 16
     }
   ]
 }

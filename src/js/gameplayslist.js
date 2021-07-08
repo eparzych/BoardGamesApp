@@ -36,7 +36,7 @@ export const GameplayList = () => {
         <Search gameplays={gameplays} setFilteredGameplays={setFilteredGameplays}/>
         { selectedGame === false 
             ? <BoardgamesList gameplays={filteredGameplays} setSelectedGame={setSelectedGame}/> 
-            : <SelectedGames gameplay={selectedGame}/> 
+            : <SelectedGames gameplay={selectedGame} setSelectedGame={setSelectedGame}/> 
         }
         <Footer />
     </>

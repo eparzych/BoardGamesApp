@@ -1,15 +1,12 @@
 import React from "react";
-import {
-    Link,
-  } from 'react-router-dom';
+
 
 export const SelectedGames = (props) => {
-    const {gameplay} = props;
+    const {gameplay, setSelectedGame} = props;
     return(
         <section className="board__games container">
-            <Link to= "/main">
-                <i className="escape__button far fa-times-circle"></i>
-            </Link>
+            <i className="escape__button far fa-times-circle"
+                onClick={e => setSelectedGame(false)}></i>
             <h1 className="board__games__title">{gameplay.title}</h1>
             <ul className="new__game">
                 <li>Czas spotkania: {gameplay.date}</li>
