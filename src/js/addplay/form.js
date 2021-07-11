@@ -14,10 +14,10 @@ export const FormAddPlay = () => {
     }]);
     const [redirectToReferrer, setRedirectToReferrer] = useState(false);
     
-    // 1. TWORZENIE NOWEGO OBIEKTU W STANIE PO WCISNIĘCIU +
+    // 1. TWORZENIE NOWEGO OBIEKTU W STANIE PO WCIŚNIĘCIU +
     const handleAddNewPlayer = (e) => {
         e.preventDefault();
-        const colorHex = `#fb${Math.floor(Math.random()*10)}`;
+        const colorHex = `#fa${Math.floor(Math.random()*10)}`;
 
         setPlayers(prevPlayers => [...prevPlayers, {
             id: prevPlayers.length,
@@ -26,6 +26,7 @@ export const FormAddPlay = () => {
             background: colorHex
         }]);
     }
+
     //3. AKTUALIZACJA STANU Z GRACZEM PRZEKAZANYM DO PROPSÓW
     const handleUpdatePlayer = (updatedPlayer) => {
         setPlayers(prevPlayers => prevPlayers.map(player => {
@@ -35,9 +36,10 @@ export const FormAddPlay = () => {
                 return player;
             }
         }));
-      };
+    }
 
-      const buttonSubmit = (e) => {
+
+    const buttonSubmit = (e) => {
         e.preventDefault();
         const dataForm = {
             title,
@@ -53,7 +55,6 @@ export const FormAddPlay = () => {
                 "Content-Type": "application/json"
             }
         })
-        // console.log(dataForm);
         return setRedirectToReferrer(true);
     };
 
@@ -90,7 +91,11 @@ export const FormAddPlay = () => {
                     </li>
                     ))}
             </ul>
-            <button onClick={handleAddNewPlayer}><i className="far fa-plus-square add__player"></i></button>
+            {players.length <= 6 &&
+                <button className="add__player" onClick={handleAddNewPlayer}>
+                    <i className="far fa-plus-square"></i>
+                </button>
+            }
             <div className="last">
                 <button className="btn" onClick={ buttonSubmit }>Zapisz</button>
             </div>
