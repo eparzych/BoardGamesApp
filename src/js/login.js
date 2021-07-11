@@ -7,7 +7,7 @@ export const Login = () => {
   const [login, setLogin] = useState("");
   const [password, setPassword] = useState("");
   const [redirectToReferrer, setRedirectToReferrer] = useState(false);
-  const [formMassage, setFormMassage] = useState([]);
+  const [formMessage, setFormMessage] = useState([]);
 
   const clickSaveBtn = (e) => {
     e.preventDefault();
@@ -21,7 +21,7 @@ export const Login = () => {
     console.log(userInfo);
 
     if (login.length < 3 || password < 3) {
-      setFormMassage("Wypełnij poprawnie pola przynajmniej 3ma znakami!");
+      setFormMessage("Wypełnij poprawnie pola przynajmniej 3ma znakami!");
     } else {
       setRedirectToReferrer(true);
     }
@@ -55,8 +55,8 @@ export const Login = () => {
               </label>
             </div>
             <button onClick={clickSaveBtn} className="btn btn__login">Zaloguj</button>
-            <div className="massage">
-              {formMassage}
+            <div className="Message">
+              {formMessage}
             </div>
           </form>
     </section>

@@ -73,7 +73,7 @@ export const FormAddPlay = () => {
             <div>
                 <label>
                     Wyberz datę:
-                    <input className="new__play__input" type="datetime-local" value={date} onChange={e => setDate(e.target.value)} min="2018-06-07T00:00" max="2030-12-14T00:00" />
+                    <input className="new__play__input" type="date" value={date} onChange={e => setDate(e.target.value)} min="2018-06-07" max="2030-12-14" />
                 </label>
             </div>
             <div>

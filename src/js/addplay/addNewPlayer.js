@@ -2,7 +2,6 @@ import React from 'react';
 
 export const AddNewPlayer = (props) => {
   const { player, updatePlayer} = props;
-  console.log(player.background);
 
   const handleChangeName = (e) => {
     const playerCopy = {
