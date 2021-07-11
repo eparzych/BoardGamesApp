@@ -38,7 +38,6 @@ export const FormAddPlay = () => {
         }));
     }
 
-
     const buttonSubmit = (e) => {
         e.preventDefault();
         const dataForm = {

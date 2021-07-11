@@ -36,7 +36,7 @@ export const AddNewPlayer = (props) => {
         </label>
         <label>
             Wpisz ilość punktów:
-            <input className="new__play__input" type="text"
+            <input className="new__play__input" type="number"
                    name="points" 
                    placeholder="Wpisz ilość punktów" 
                    value={player.points} 
