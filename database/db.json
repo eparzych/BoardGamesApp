@@ -168,6 +168,24 @@
         }
       ],
       "id": 8
+    },
+    {
+      "title": "Detektyw",
+      "date": "2021-07-05T20:25",
+      "place": "Gdańsk",
+      "players": [
+        {
+          "id": 0,
+          "name": "Madzia",
+          "points": "100"
+        },
+        {
+          "id": 1,
+          "name": "Piotrek",
+          "points": "100"
+        }
+      ],
+      "id": 9
     }
   ]
 }

@@ -1,7 +1,8 @@
 import React from 'react';
 
 export const AddNewPlayer = (props) => {
-  const { player, updatePlayer } = props;
+  const { player, updatePlayer} = props;
+  console.log(player.background);
 
   const handleChangeName = (e) => {
     const playerCopy = {
@@ -23,13 +24,15 @@ export const AddNewPlayer = (props) => {
   }
 
   return (
-    <>
+    <div className="new__player">
         <label>Wpisz imię gracza:
-          <input className="new__play__input" type="text" 
+          <input className="new__play__input " type="text" 
                  name="name"
                  placeholder="Wpisz imię gracza"
                  value={player.name} 
-                 onChange={handleChangeName} />
+                 onChange={handleChangeName}
+                 style={{ backgroundColor: player.background}} />
+
         </label>
         <label>
             Wpisz ilość punktów:
@@ -37,7 +40,8 @@ export const AddNewPlayer = (props) => {
                    name="points" 
                    placeholder="Wpisz ilość punktów" 
                    value={player.points} 
-                   onChange={handleChangePoints} />
+                   onChange={handleChangePoints} 
+                   style={{ backgroundColor: player.background }}/>
         </label>
-  </>
+  </div>
 )}

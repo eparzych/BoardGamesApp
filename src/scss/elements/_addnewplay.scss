@@ -30,11 +30,13 @@ label {
 }
 
 .new__player {
-    margin-top: 12px;
-    padding: 10px;
-    border-radius: 5px;
-    font-family: 'Arial', sans-serif;
-    font-weight: 500;
-    color: rgb(104, 104, 104);
-    // background: url(../images/paper.jpg) center/cover;
+    display: flex;
+
+    .new__play__input {
+        width: 300px;
+        
+        &:first-child {
+            margin-right: 20px;
+        }
+    }
 }

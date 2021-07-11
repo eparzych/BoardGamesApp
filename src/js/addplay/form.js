@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Redirect } from 'react-router-dom';
 import { AddNewPlayer } from "./addNewPlayer.js";
 
 export const FormAddPlay = () => {
@@ -9,15 +10,20 @@ export const FormAddPlay = () => {
         id: 0,
         name: "",
         points: 0,
+        background: ""
     }]);
+    const [redirectToReferrer, setRedirectToReferrer] = useState(false);
     
     // 1. TWORZENIE NOWEGO OBIEKTU W STANIE PO WCISNIĘCIU +
     const handleAddNewPlayer = (e) => {
         e.preventDefault();
+        const colorHex = `#fb${Math.floor(Math.random()*10)}`;
+
         setPlayers(prevPlayers => [...prevPlayers, {
             id: prevPlayers.length,
             name: "",
             points: 0,
+            background: colorHex
         }]);
     }
     //3. AKTUALIZACJA STANU Z GRACZEM PRZEKAZANYM DO PROPSÓW
@@ -47,8 +53,13 @@ export const FormAddPlay = () => {
                 "Content-Type": "application/json"
             }
         })
-        console.log(dataForm);
+        // console.log(dataForm);
+        return setRedirectToReferrer(true);
     };
+
+    if (redirectToReferrer){
+        return <Redirect to="/gameplayslist" />
+      }
 
     return (
     <section className="add__new__play__bg">
