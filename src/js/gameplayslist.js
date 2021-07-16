@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Navigation } from "./main/nav.js";
 import { Search } from "./gameplayslist/search.js";
 import { BoardgamesList } from "./gameplayslist/boardgamesList.js";
-import { SelectedGames } from "./gameplayslist/selectedGames.js";
+import { SelectedGame } from "./gameplayslist/selectedGame.js";
 import { Footer } from "./main/footer.js";
 
 export const GameplayList = () => {
@@ -36,7 +36,7 @@ export const GameplayList = () => {
         <Search gameplays={gameplays} setFilteredGameplays={setFilteredGameplays}/>
         { selectedGame === false 
             ? <BoardgamesList gameplays={filteredGameplays} setSelectedGame={setSelectedGame}/> 
-            : <SelectedGames gameplay={selectedGame} setSelectedGame={setSelectedGame}/> 
+            : <SelectedGame gameplay={selectedGame} setSelectedGame={setSelectedGame}/> 
         }
         <Footer />
     </>

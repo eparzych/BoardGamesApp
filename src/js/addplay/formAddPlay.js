@@ -10,7 +10,7 @@ export const FormAddPlay = () => {
         id: 0,
         name: "",
         points: 0,
-        background: ""
+        background: "#fba"
     }]);
     const [redirectToReferrer, setRedirectToReferrer] = useState(false);
     
@@ -54,7 +54,7 @@ export const FormAddPlay = () => {
                 "Content-Type": "application/json"
             }
         })
-        return setRedirectToReferrer(true);
+        setRedirectToReferrer(true);
     };
 
     if (redirectToReferrer){

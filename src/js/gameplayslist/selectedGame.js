@@ -1,7 +1,7 @@
 import React from "react";
 
 
-export const SelectedGames = (props) => {
+export const SelectedGame = (props) => {
     const {gameplay, setSelectedGame} = props;
     return(
         <section className="board__games container">
