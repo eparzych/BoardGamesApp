@@ -14,6 +14,9 @@ The project is used to save the games of boardgames.
 - Webpack
 
 ## Screenshots
+![Screenshot 1](images/screenshot1.png)
+![Screenshot 2](images/screenshot2.png)
+![Screenshot 3](images/screenshot3.png)
 
 ## Setup
 - npm install --dev
