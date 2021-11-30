@@ -16,8 +16,9 @@ The project is used to save the games of boardgames.
 ## Screenshots
 
 ## Setup
+- npm install --dev
 - json-server --watch database/db.json
 - npm start
 
 ## Contact
-emilia.parzych92@gmail.com- feel free to contact me!
+emilia.parzych92@gmail.com - feel free to contact me!
