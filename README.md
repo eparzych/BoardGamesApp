@@ -19,6 +19,7 @@ The project is used to save the games of boardgames.
 ![Screenshot 2](images/screenshot2.jpg)
 ![Screenshot 3](images/screenshot3.png)
 ![Screenshot 4](images/screenshot4.png)
+![Screenshot 6](images/screenshot6.png)
 ![Screenshot 5](images/screenshot5.png)
 
 ## Setup
