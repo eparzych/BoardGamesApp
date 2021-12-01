@@ -7,10 +7,10 @@ The project is used to save the games of boardgames.
 ## Technologies Used
 - React 16.11
 - React Router 5.2
-- Babel 7.5
-- REST API 3.6
-- JSON Server 0.16.3
-- SASS 1.34
+- Babel
+- REST API 
+- JSON Server
+- SASS 
 - GRID 
 - Webpack 4.39
 
