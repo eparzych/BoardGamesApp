@@ -24,7 +24,7 @@ The project is used to save the games of boardgames.
 
 ## Setup
 - npm install --dev
-- json-server --watch database/db.json
+- npx json-server --watch database/db.json
 - npm start
 
 ## Contact
